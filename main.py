@@ -12,17 +12,10 @@ def main():
     for dragon in dragons:
         describe(dragon)
 
-    for dragon in dragons:
-        # print(dragon_list_copy)
+    for dragon in dragons: # iterating over original list to prevent disorder
         del dragon_list_copy[0]
-        dragon.breathe_fire(3, 3, dragon_list_copy)
+        dragon.breathe_fire(3, 3, dragon_list_copy) # operating on a copy of the original list
         dragon_list_copy.append(dragon)
-
-        # print(dragon.name)
-
-
-# print(dragon_list_copy)
-
 
 # don't touch below this line
 
